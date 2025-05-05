@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moody Coffee</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="hader1.webp" alt="imag head">
+    <h1>Moody Coffee</h1>
+  </header>
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('about')">About</a>
+    <a href="#" onclick="showPage('content')">Content</a>
+    <a href="#" onclick="showPage('order')">Order</a>
+  </nav>  <div id="home" class="page active">
+    <div class="hero">
+      <p>A Coffee for Every Mood</p>
+    </div>
+    <div class="products">
+      <div class="product">
+        <img src="moca2.webp" alt="Mocha Coffee">
+        <h3>Mocha</h3>
+        <p>AFN 120</p>
+      </div>
+      <div class="product">
+        <img src="cap3.webp" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>AFN 100</p>
+      </div>
+      <div class="product">
+        <img src="sper4.webp" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>AFN 80</p>
+      </div>
+    </div>
+  </div>  <div id="about" class="page">
+    <h2>About Us</h2>
+    <p>At Moody Coffee, we bring the best blends to match every mood. We are passionate about coffee and love sharing it with you.</p>
+  </div>  <div id="content" class="page">
+    <h2>Content</h2>
+    <p>Here you'll find coffee tips, brewing methods, health benefits, and interesting stories about coffee culture.</p>
+  </div>  <div id="order" class="page">
+    <h2>Order Online</h2>
+    <p>To order your favorite coffee, please contact us or send an email:</p>
+    <p>ghazalforough5@gmail</p>
+  </div>  <footer>
+    <p>&copy; 2025 Moody Coffee. All rights reserved.</p>
+  </footer>
+</body>
+</html>
